@@ -11,8 +11,8 @@ export const AddCategory = ({ setcategorias }) => {
     const handleInputChange = (e) => setinputValue(e.target.value);
 
     const handleSubmit = (e) => {
-        console.log('submit Hecho')
         e.preventDefault();
+        console.log('handleSubmit')
 
         if (inputValue.trim().length > 2) {
 
@@ -21,7 +21,6 @@ export const AddCategory = ({ setcategorias }) => {
             )
             setinputValue("")
         }
-
 
 
 
@@ -37,6 +36,7 @@ export const AddCategory = ({ setcategorias }) => {
                 onChange={handleInputChange}
             />
         </form>
+
 
     )
 }
